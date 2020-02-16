@@ -6,7 +6,6 @@
 	
 	  {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css')!!}
 	  {!!Html::style('https://fonts.googleapis.com/icon?family=Material+Icons')!!}
-  
   <style>
   	
 		#imgs{
@@ -23,9 +22,16 @@
 		.centrado{
            margin-left: 35%;
 		}
+		.error{
+			color: #FF3E45;
+			font-size: 10px;
+			background-color: none;
+		}
+		.validate{
+			margin-bottom: 0px !important;
+		}
   </style>
 
-		
 
 </head>
 <body>

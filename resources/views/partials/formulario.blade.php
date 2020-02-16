@@ -3,19 +3,19 @@
        <div class="input-field col s12">
             {!! Form::text('nombre',null, ['class' => 'validate']) !!}      
             {!! Form::label('nombre' , 'Nombre' , $attributes = ['data-error'=>'wrong', 'data-success' => '']) !!}
-            @if($errors->first('nombre'))<span  class="pink lighten-5"> {{ $errors->first('nombre') }} </span>@endif 
+            @if($errors->first('nombre'))<span class="error collection-item pink lighten-5" > {{ $errors->first('nombre') }} </span>@endif 
       </div>
 
        <div class="input-field col s12">
           {!! Form::text('apellido', null , ['class' => 'validate']) !!}
           {!! Form::label('apellido' , 'Apellido' , $attributes = ['data-error'=>'wrong', 'data-success' => '']) !!}
-          @if($errors->first('apellido'))<span  class="pink lighten-5"> {{ $errors->first('apellido') }} </span>@endif
+          @if($errors->first('apellido'))<span  class="error collection-item pink lighten-5"> {{ $errors->first('apellido') }} </span>@endif
         </div>
 
        <div class="input-field col s12">
           {!! Form::email('email', null , ['class' => 'validate']) !!}
           {!! Form::label('email' , 'Email' , $attributes = ['data-error'=>'wrong', 'data-success' => '']) !!}
-          @if($errors->first('email'))<span class="pink lighten-5"> {{ $errors->first('email') }} </span>@endif
+          @if($errors->first('email'))<span class="error collection-item pink lighten-5"> {{ $errors->first('email') }} </span>@endif
         </div>
 
       <div class="input-field col s12 "> 
@@ -23,7 +23,7 @@
           ['familia' => 'Familia', 'trabajo' => 'Trabajo' , 'amigos' => 'Amigos'],null,
            ['placeholder' => 'Selecciona un  grupo'], ['class' => 'icons'] )
         !!}
-        @if($errors->first('grupo'))<span  class="pink lighten-5"> {{ $errors->first('grupo') }} </span>@endif
+        @if($errors->first('grupo'))<span  class="error collection-item pink lighten-5"> {{ $errors->first('grupo') }} </span>@endif
       </div>
 
        <div class="input-field col s12 ">
@@ -37,5 +37,5 @@
            ],null,
            ['placeholder' => 'Selecciona un Avatar'], ['class' => 'icons'] )
         !!}
-        @if($errors->first('avatar'))<span class="pink lighten-5"> {{ $errors->first('avatar') }} </span>@endif 
+        @if($errors->first('avatar'))<span class="error collection-item pink lighten-5"> {{ $errors->first('avatar') }} </span>@endif 
     </div>
